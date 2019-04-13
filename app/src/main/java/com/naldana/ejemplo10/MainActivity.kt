@@ -150,6 +150,10 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                 QueryPokemonTask().execute(item.title.toString())
                 Toast.makeText(this, item.title, Toast.LENGTH_SHORT).show()
             }
+            R.id.guatemala -> {
+                QueryPokemonTask().execute(item.title.toString())
+                Toast.makeText(this, item.title, Toast.LENGTH_SHORT).show()
+            }
         }
 
         // TODO (15) Cuando se da click a un opcion del menu se cierra de manera automatica

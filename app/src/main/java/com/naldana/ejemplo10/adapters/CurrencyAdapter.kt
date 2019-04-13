@@ -6,6 +6,9 @@ import android.view.View
 import android.view.ViewGroup
 import com.naldana.ejemplo10.R
 import com.naldana.ejemplo10.pojos.Currency
+import com.squareup.picasso.Picasso
+import kotlinx.android.synthetic.main.activity_currecncy.*
+import kotlinx.android.synthetic.main.activity_currecncy.view.*
 import kotlinx.android.synthetic.main.currency_list.view.*
 
 class CurrencyAdapter(val items: List<Currency>, val clickListener: (Currency) -> Unit) : RecyclerView.Adapter<CurrencyAdapter.ViewHolder>() {
@@ -26,6 +29,12 @@ class CurrencyAdapter(val items: List<Currency>, val clickListener: (Currency) -
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
 
         fun bind(item: Currency, clickListener: (Currency) -> Unit) = with(itemView) {
+            Picasso.with(this@with.context)
+                .load(item.img)
+                .resize((this.resources.displayMetrics.widthPixels/this.resources.displayMetrics.density).toInt(),256)
+                .centerCrop()
+                .error(R.drawable.ic_launcher_foreground)
+                .into(tv_currency_image)
             tv_currency_name.text = item.name
             tv_currency_country.text = item.country
 

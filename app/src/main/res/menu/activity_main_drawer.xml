@@ -25,22 +25,21 @@
                 android:id="@+id/nav_manage"
                 android:icon="@drawable/ic_menu_manage"
                 android:title="Belize"/>
+        <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Costa Rica"/>
+        <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Panama"/>
+        <item
+                android:id="@+id/guatemala"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Guatemala"/>
     </group>
 
     <!-- TODO (3.6) Se puede definir  seccion con Communicate -->
-    <item android:title="Communicate">
-        <!-- TODO (3.7) Debe definirse un menu -->
-        <menu>
-            <!-- TODO (3.7) Y lo elementos que lo conforman -->
-            <item
-                    android:id="@+id/nav_share"
-                    android:icon="@drawable/ic_menu_share"
-                    android:title="Share"/>
-            <item
-                    android:id="@+id/nav_send"
-                    android:icon="@drawable/ic_menu_send"
-                    android:title="Send"/>
-        </menu>
-    </item>
+
 
 </menu>

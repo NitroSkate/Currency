@@ -1,4 +1,0 @@
-#Fri Apr 12 07:19:00 CST 2019
-base.0=C\:\\Users\\choch\\Google Drive (00159817@uca.edu.sv)\\Ciclo 5\\Moviles\\Clases\\T2\\Currency\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\5
-path.0=classes.dex
-renamed.0=classes.dex
